@@ -1,0 +1,66 @@
+.container {
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .center {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 4rem;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--white);
+    box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+    border-radius: 5px;
+
+    .dateHeart {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      p {
+        color: var(--blue-dark);
+      }
+    }
+
+    .posts {
+      margin-top: 1rem;
+
+      h1 {
+        color: #1A202C;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 32px;
+      }
+
+      p {
+        margin-top: 0.5rem;
+        color: #717171;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+  }
+}

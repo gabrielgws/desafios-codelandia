@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './styles.module.scss';
 
+import { AiOutlineSearch } from 'react-icons/ai';
+
 function Header() {
   return(
     <div className={styles.container}>
@@ -10,7 +12,8 @@ function Header() {
           <p>blog</p>
         </div>
         <div className={styles.search}>
-          <input type="text" />
+          <h2><AiOutlineSearch /></h2>
+          <input type="text" placeholder='Pesquisar no blog' />
         </div>
       </div>
     </div>

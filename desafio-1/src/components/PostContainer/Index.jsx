@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styles from './styles.module.scss';
 
-// yarn json-server --watch data/db.json --port 8000
-
 import { AiOutlineHeart } from 'react-icons/ai';
 
-function PostContainer() {
+function PostContainer({search}) {
   const [api, setApi] = useState([]);
 
   useEffect(() => {
@@ -16,8 +14,15 @@ function PostContainer() {
 
    return (
     <div className={styles.container}>
-        {api.map((setApi) => (
-          <>
+        {api.filter((setApi) => {
+          if (api === ""){
+            return setApi;
+          } else if (setApi.title.toLowerCase().includes(search.toLowerCase())){
+            return setApi;
+          }
+        }
+          ).map((setApi) => (
+          <div key={setApi.id}>
             <div className={styles.center}>
               <div className={styles.dateHeart}>
                 <h2>{setApi.data}</h2>
@@ -29,7 +34,7 @@ function PostContainer() {
                 <p>{setApi.body}</p>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
   );

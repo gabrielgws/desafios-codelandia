@@ -9,6 +9,10 @@
   max-width: 1440px;
   margin: 0 auto;
 
+  &:last-child{
+    margin-bottom: 10rem;
+  }
+
   .center {
     width: 100%;
     padding: 0.5rem;

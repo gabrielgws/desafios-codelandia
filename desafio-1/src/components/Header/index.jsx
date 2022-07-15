@@ -1,15 +1,8 @@
-import React, { useState } from 'react';
 import styles from './styles.module.scss';
 
 import { AiOutlineSearch } from 'react-icons/ai';
 
-function Header() {
-  const [search, setSearch] = useState("");
-  
-  function handleChange(event){
-    setSearch(event.target.value)
-    console.log(event.target.value)
-  }
+function Header({search, setSearch, handleChange}) {
 
   return(
     <div className={styles.container}>

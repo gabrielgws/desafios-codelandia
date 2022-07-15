@@ -18,12 +18,12 @@ function PostContainer({search}) {
           if (api === ""){
             return setApi;
           } else if (setApi.title.toLowerCase().includes(search.toLowerCase())){
-            return setApi;
+            return setApi.title;
           }
-        }
-          ).map((setApi) => (
-          <div key={setApi.id}>
-            <div className={styles.center}>
+          return false;
+        }).map((setApi) => (
+          <div key={setApi.id} className={styles.center}>
+            <div className={styles.postsWraper}>
               <div className={styles.dateHeart}>
                 <h2>{setApi.data}</h2>
                 <p><AiOutlineHeart/></p>

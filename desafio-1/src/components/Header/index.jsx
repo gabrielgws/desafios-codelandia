@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 
 import { AiOutlineSearch } from 'react-icons/ai';
 
-function Header({search, setSearch, handleChange}) {
+function Header({search, handleChange}) {
 
   return(
     <div className={styles.container}>

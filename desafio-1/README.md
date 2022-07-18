@@ -27,4 +27,6 @@ O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
 Este é um projeto desenvolvido para mostrar as minhas habilidades e evoluções das tecnologias apresentadas.
 
+-----
+
 Feito com 💜 by gabrielgws :rocket:	
